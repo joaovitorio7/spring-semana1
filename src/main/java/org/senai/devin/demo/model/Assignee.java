@@ -1,11 +1,18 @@
 package org.senai.devin.demo.model;
 
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
 public class Assignee {
 
+    @NotNull
     private Integer id;
+
+    @NotBlank
     private String name;
 
     public Assignee() {
+
     }
 
     public Assignee(Integer id, String name) {
